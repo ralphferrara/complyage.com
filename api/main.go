@@ -86,6 +86,7 @@ func main() {
 	//||------------------------------------------------------------------------------------------------||
 	router.HandleFunc("/auth/login", handlers.LoginHandler).Methods("POST")
 	router.HandleFunc("/auth/signup", handlers.SignupHandler).Methods("POST")
+	router.HandleFunc("/auth/me", handlers.AuthMeHandler).Methods("GET")
 	//||------------------------------------------------------------------------------------------------||
 	//|| Logger Middleware
 	//||------------------------------------------------------------------------------------------------||

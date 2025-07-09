@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import SignupUser from './pages/SignupUser'
 import SignupMerchant from './pages/SignupMerchant'
 import Login from './pages/Login'
+import Members from './pages/Members'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Route path="/signup/user" element={<SignupUser />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup/merchant" element={<SignupMerchant />} />
+      <Route path="/members" element={<Members />} />
     </Routes>
   )
 }
